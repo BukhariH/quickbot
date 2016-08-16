@@ -62,21 +62,28 @@ router.get('/bot/update', function(req, res, next) {
 						// Finds if the sentiment of the user's message is postive or negative
 						// Then posts a postive gif & message for postive & netural sentiment
 						// Or posts a negative gif & message for negative sentiment
-						textapi.sentiment({
-						  'text': result.body
-						}, function(error, response) {
-						  if (error === null) {
-							sleep(1000).then(() => {
-							  	if (response.polarity != 'negative') {
-							  		result.reply(getMessage('positive'));
-							  	} else {
-							  		result.reply(getMessage('negative'));
-							  	}
-							  	client.set("CommentedOn", result.id, function (err, res) {
-							  		console.log("Commited to Redis")
-							  	});
-							})
-						  }
+						client.hget("PostedTo", result.id, function (err, reply) {
+							if (reply != null) {
+								textapi.sentiment({
+								  'text': result.body
+								}, function(error, response) {
+								  if (error === null) {
+
+									sleep(1000).then(() => {
+									  	if (response.polarity != 'negative') {
+									  		result.reply(getMessage('positive'));
+									  	} else {
+									  		result.reply(getMessage('negative'));
+									  	}
+									  	console.log("Already posted here")
+									  	client.set("CommentedOn", result.id, redis.print);
+									  	client.hset("PostedTo", comments[i]["link_id"], "true", redis.print);
+									})
+								  }
+								});
+							} else {
+								console.log("Already posted here")
+							}
 						});
 					})
 				}

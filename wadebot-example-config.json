@@ -1,4 +1,6 @@
 {
+	"SearchPhrase": "wade",
+	"Subreddits": "denverbroncos",
 	"RedisPort": 14737,
 	"RedisHost": "********.*****.gce.garantiadata.com",
 	"RedisPassword": "***********",
