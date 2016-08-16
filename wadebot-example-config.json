@@ -1,0 +1,16 @@
+{
+	"RedisPort": 14737,
+	"RedisHost": "********.*****.gce.garantiadata.com",
+	"RedisPassword": "***********",
+	"AylienTextApiId": "******",
+	"AylienTextApiKey": "******",
+	"RedditUserAgent": "wadebot",
+	"RedditClientId": "********",
+	"RedditClientSecret": "*******",
+	"RedditUsername": "wadebot",
+	"RedditPassword": "**********",
+	"PositiveGifs": ["https://i.imgur.com/8svVzpM.gif", "https://i.imgur.com/e1lkq4M.gif", "https://i.imgur.com/PfX2mTZ.gif", "https://i.imgur.com/UF6zhpT.gif"],
+	"NegativeGifs": ["https://i.imgur.com/oPirZrU.gif", "https://i.imgur.com/sKsVsUw.gif", "https://i.imgur.com/rxRkjpR.gif", "https://i.imgur.com/0TdiNPY.gif"],
+	"PositiveMessages": ["No Wade, No Gain", "The One Wade To Rule Them All", "A Wade For Your Thoughts", "Your Wade Is As Good As Mine", "Wade Up", "Down To The Wade", "Going The Extra Wade", "Time To Hit The Wade", "Hocus Wadous", "The Icing On The Wade", "Never Bite The Wade That Feeds You", "Saved By The Wade", "Wade And Dine", "X Marks The Wade"],
+	"NegativeMessages": ["Curiosity Killed The Wade", "No Need To Cry Over Spilt Wade", "Drastic Times Call For Drastic Wade", "Excuse My Wade", "Water Under The Wade", "Your Wade Is As Good As Mine", "You Can't Judge A Wade By Its Cover"]
+}

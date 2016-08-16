@@ -1,0 +1,18 @@
+{
+	"SearchPhrase": "YOUR SEARCH PHRASE HERE",
+	"Subreddits": "YOUR SUBREDDIT HERE",
+	"RedisPort": YOUR_PORT_HERE_WITH_NO_QUOTES,
+	"RedisHost": "YOUR REDIS HOST HERE",
+	"RedisPassword": "YOUR REDIS PASSWORD HERE",
+	"AylienTextApiId": "YOUR AYLIEN APP ID HERE",
+	"AylienTextApiKey": "YOUR AYLIEN API KEY HERE",
+	"RedditUserAgent": "YOUR USER AGENT HERE",
+	"RedditClientId": "YOUR CLIENT ID HERE",
+	"RedditClientSecret": "YOUR CLIENT SECERT HERE",
+	"RedditUsername": "YOUR USER NAME HERE",
+	"RedditPassword": "YOUR PASSWORD HERE",
+	"PositiveGifs": ["CHANGE THESE TO YOUR OWN"],
+	"NegativeGifs": ["CHANGE THESE TO YOUR OWN"],
+	"PositiveMessages": ["CHANGE THESE TO YOUR OWN"],
+	"NegativeMessages": ["CHANGE THESE TO YOUR OWN"]
+}
